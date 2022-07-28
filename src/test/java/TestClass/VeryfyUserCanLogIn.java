@@ -18,14 +18,19 @@ public class VeryfyUserCanLogIn {
 
 	static WebDriver driver;
 	 LoginPage lp;
+	 
 	 HomePage hp;
+	 
 	@BeforeClass
+	
 	public void beforeClass() throws IOException
 	{
 		driver = BaseClass1.getDriver("chrome");
 	}
 	
 	@BeforeMethod
+	
+	
 	public void beforeMethod()
 	{
 		  lp = new LoginPage(driver);
